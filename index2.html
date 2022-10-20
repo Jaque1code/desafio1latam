@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display:flex">
+    <div style="display:flex;flex-direction: column; width:33%;">
+        <img src="./assest/img/Dragon-Ball.webp" width="100%" height="250">
+        <input type="number" id="numero1" value="0"/>
+    </div>
+    <div style="display:flex;flex-direction: column; width:33%;">
+       <img src="./assest/img/dragon2.jpg" width="100%"  height="250">
+       <input type="number" id="numero2" value="0"/>   
+    </div>
+    <div style="display:flex;flex-direction: column; width:33%;">
+       <img src="./assest/img/dragon3.jpg" width="100%"  height="250">
+       <input type="number" id="numero3" value="0"/>     
+   </div>
+   </div>
+   <p id="resultado"></p>
+   <button type="button" onclick="
+    var inputNum1 = document.querySelector('#numero1'); 
+    var inputNum2 = document.querySelector('#numero2'); 
+    var inputNum3 = document.querySelector('#numero3'); 
+    var resultado = document.querySelector('#resultado');
+      
+    var sumatoria = Number(inputNum1.value) + Number(inputNum2.value) + Number(inputNum3.value);
+
+    if (sumatoria > 10) {
+       resultado.innerHTML = 'Tienes muchos stickers'
+    } else {
+       resultado.innerHTML = 'Llevas '+sumatoria+' stickers';
+    }
+    
+     ">Verificar</button>
+
+   
+
+</body>
+</html>
